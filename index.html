@@ -50,6 +50,7 @@
     .note { margin:24px 0 0; font-size:.86rem; color:#396d68; }
     footer { padding:34px 0 52px; border-top:1px solid rgba(22,78,73,.18); font-size:.9rem; }
     footer p { max-width:650px; margin:6px 0; }
+    footer .source-note { margin:0; }
     @media (max-width:540px) { header{padding-top:28px} h1{margin-top:32px} .story-summary{padding:18px;gap:16px} .story-image{width:92px;height:132px} .story-summary h2{font-size:1.6rem} .button{border-radius:18px} .brand{font-size:.7rem;gap:10px} }
     @media (prefers-reduced-motion:reduce) { html{scroll-behavior:auto} .button{transition:none} }
   </style>
@@ -93,8 +94,8 @@
   </main>
   <footer><div class="wrap">
     <p><strong>@reasonstolookup.world</strong></p>
-    <p>We link to original sources so you can explore each story further.</p>
-    <p>A link is not an endorsement of every claim made by its publisher.</p>
+    <p class="source-note">We link to original sources so you can explore each story further.</p>
+    <p class="source-note">A link is not an endorsement of every claim made by its publisher.</p>
   </div></footer>
   <script>
     const stories = [...document.querySelectorAll('.story')];
