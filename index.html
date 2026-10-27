@@ -39,6 +39,12 @@
     .empty { padding:30px 0; }
     .content { padding:clamp(24px,6vw,48px); }
     h2 { margin:0 0 14px; font-size:clamp(2rem,7vw,3.6rem); line-height:1.05; }
+    .content h3 { margin:28px 0 12px; font-family:Georgia,"Times New Roman",serif; font-size:1.55rem; line-height:1.2; font-weight:400; }
+    .content section:first-child h3 { margin-top:0; }
+    .evidence-details { margin:26px 0; border:1px solid rgba(22,78,73,.22); border-radius:12px; background:var(--mint); }
+    .evidence-details > summary { cursor:pointer; padding:16px 20px; font-weight:700; }
+    .evidence-body { padding:0 20px 18px; }
+    .evidence-body .explain { background:var(--paper); }
     .dek { max-width:670px; font-size:1.05rem; }
     .explain { margin:26px 0; padding:20px 22px; border-left:4px solid var(--peach); background:var(--mint); border-radius:4px 14px 14px 4px; }
     .explain strong { display:block; margin-bottom:4px; }
@@ -75,16 +81,25 @@
       <div>
         <p class="eyebrow">Sports</p>
         <h2>He built a knee to race.<br>Now his rivals use his designs.</h2>
-        <span class="summary-action">The story, evidence &amp; context</span>
+        <span class="summary-action">Read the story + explore sources</span>
       </div>
     </summary>
     <div class="content">
-      <p class="dek">U.S. Para snowboarder Mike Schultz began developing sports prosthetic equipment after a 2008 snowmobile racing injury. His own account describes earning Summer X Games silver in 2009 using his prosthetic design. His company BioDapt, founded in 2010, manufactures components used by fellow competitors. This is a retrospective story about athlete-led design, not a new invention announced in October 2026.</p>
-      <p>In a February 2026 IPC interview, Schultz explained the practical demands of action sports and the benefit to his business when other athletes use his equipment. The knee’s adjustable spring-and-shock system helps manage resistance and assist extension. Manufacturer documentation supports those design principles; it does not independently establish superiority or guarantee a sporting result.</p>
-      <p>IPC results record banked-slalom bronze at Milano Cortina on 13 March 2026. U.S. Ski &amp; Snowboard’s April retrospective confirms his retirement from competitive snowboarding and intention to focus on his company. The earlier March AP report preceded his final medal and therefore gives a different career medal total. Autodesk has announced collaboration with BioDapt toward prosthetics for athletes targeting Los Angeles 2028; the announcement describes an aim for the Los Angeles 2028 Paralympics.</p>
-      <p>BioDapt is a commercial manufacturer. No claim is made here about donations, universal affordability or access. The pre-Games estimate of around 25 equipment users is not treated as a verified attendance count. This profile does not establish that equipment caused a medal result.</p>
-      <p>The prototype had been tested at a qualifier before that Summer X Games result; we do not describe the medal as his first competition.</p>
-      <nav class="links" aria-label="Mike Schultz sources">
+        <section aria-labelledby="mike-schultz-story"><h3 id="mike-schultz-story">The story</h3>
+        <p>Mike Schultz wanted to race again. After a snowmobile racing injury in 2008 led to an above-knee amputation, he found that the prosthetic equipment he had tried did not suit the demands of his action sports. Drawing on his mechanical experience, he began developing a knee of his own.</p>
+<p>His design used suspension principles: a spring-and-shock system could help manage impact and assist extension, with resistance adjusted to the rider and activity. In his account for The Players’ Tribune, Schultz describes testing a prototype at a qualifier, refining it and then winning silver at the 2009 Summer X Games.</p>
+<p>In 2010, he founded BioDapt to make sports prosthetic components for other people. He went on to compete in Para snowboarding alongside athletes using his company’s designs—including his rivals. This was a business as well as an athlete’s contribution to the equipment of his sport.</p>
+<p>After banked-slalom bronze at the 2026 Paralympics, Schultz retired from competitive snowboarding. BioDapt and software company Autodesk have announced work toward prosthetics for athletes targeting the Los Angeles 2028 Paralympics. His next chapter carries the same thread as his first invention: applying what he learns to help other riders take part.</p>
+        </section>
+        <section aria-labelledby="mike-schultz-why"><h3 id="mike-schultz-why">Why it matters</h3>
+        <p>An idea developed for one athlete became equipment used by others, including people competing against him. The hopeful part is practical: a rider’s experience informing tools that other athletes can use to pursue sports they love. It is not a claim that equipment alone produces medals or that access is already universal.</p></section>
+        <details class="evidence-details"><summary>Evidence and limits</summary>
+          <div class="evidence-body"><p>The early racing account comes from Schultz’s own retrospective. The IPC interview describes his equipment and its commercial role; AP reporting via MPR provides additional reporting on fellow competitors using it. Manufacturer descriptions support design principles, not independently measured superiority over other products.</p>
+<p>IPC results record banked-slalom bronze on 13 March 2026, and U.S. Ski &amp; Snowboard’s April retrospective confirms retirement from competitive snowboarding. The earlier AP article preceded that final medal, which explains its different career medal total.</p>
+<p>BioDapt is a commercial manufacturer; this story does not establish donations, universal affordability or access. The pre-Games forecast of around 25 users is not a verified attendance count. The Autodesk collaboration describes future development aims, not benefits already delivered for 2028.</p></div>
+        </details>
+        <section aria-labelledby="mike-schultz-explore"><h3 id="mike-schultz-explore">Explore further</h3>
+        <nav class="links" aria-label="Mike Schultz sources">
         <a class="button" href="https://www.paralympic.org/feature/milano-cortina-2026-mike-schultz-prosthetic-legs" target="_blank" rel="noopener noreferrer"><span>Read the IPC interview</span></a>
         <a class="button" href="https://www.paralympic.org/athletes/mike-schultz" target="_blank" rel="noopener noreferrer"><span>Check official race results</span></a>
         <a class="button" href="https://www.usskiandsnowboard.org/news/schultz-taking-next-step-his-snowboarding-career" target="_blank" rel="noopener noreferrer"><span>Read the retirement retrospective</span></a>
@@ -93,11 +108,12 @@
         <a class="button" href="https://www.biodaptinc.com/images/downloads/Manuals/BioDapt_MK2_2021_User_Manual_vs2.pdf" target="_blank" rel="noopener noreferrer"><span>See manufacturer documentation</span></a>
         <a class="button" href="https://www.theplayerstribune.com/articles/mike-schultz-biodapt-prosthetics" target="_blank" rel="noopener noreferrer"><span>Read Schultz’s early racing account</span></a>
         <a class="button" href="https://adsknews.autodesk.com/en/news/autodesk-biodapt-partnership-to-advance-next-generation-prosthetics/" target="_blank" rel="noopener noreferrer"><span>Read the announced development plans</span></a>
-      </nav>
-      <p class="note">Action, workshop and design-studio scenes are conceptual AI illustrations of anonymous figures, not photographs of Schultz or documentary records of actual events. The joint diagram and symbolic medal are original graphics, not product drawings or photographs of an actual medal.</p>
-    </div>
-  </details>
-</article>
+      </nav></section>
+        <section aria-labelledby="mike-schultz-credits"><h3 id="mike-schultz-credits">Image credits</h3>
+        <p class="note">Action, workshop and design-studio scenes are conceptual AI illustrations of anonymous figures, not photographs of Schultz or documentary records of actual events. The joint diagram and symbolic medal are original graphics, not product drawings or photographs of an actual medal.</p></section>
+      </div>
+      </details>
+    </article>
 
     <article class="story" id="blue-tailed-skink" data-theme="Nature &amp; Environment" data-keywords="S009 Christmas Island blue-tailed skink Cryptoblepharus egeriae Cocos Keeling Horsburgh Pulu Blan Madar wildlife conservation 66 545 10000">
       <details>
@@ -106,15 +122,28 @@
         <div>
           <p class="eyebrow">Nature &amp; Environment</p>
           <h2>Once gone from its only wild home.<br>Now about 10,000 live free.</h2>
-          <span class="summary-action">The story, evidence &amp; photo credit</span>
+          <span class="summary-action">Read the story + explore sources</span>
         </div>
       </summary>
       <div class="content">
-        <p class="dek">Sixty-six rescued Christmas Island blue-tailed skinks founded conservation-breeding populations on Christmas Island and at Taronga Zoo. Descendants were introduced to Pulu Blan in 2019 and Pulu Blan Madar in 2020. These are two individual islands within the Cocos (Keeling) island group, beyond the species’ native range. Horsburgh is another island in that same group and became the site of a third refuge release in 2026.</p>
+        <section aria-labelledby="blue-tailed-skink-story"><h3 id="blue-tailed-skink-story">The story</h3>
+        <p>The Christmas Island blue-tailed skink is a small, striped lizard with a vivid blue tail. Christmas Island was its only native home. Introduced predators drove the remaining wild population toward disappearance, making a rescue and breeding programme critical to its survival.</p>
+<p>Sixty-six skinks collected in 2009–10 became the founders of conservation-breeding populations on Christmas Island and at Taronga Zoo. Keeping the species alive in captivity made another step possible: finding places where descendants could live and breed freely.</p>
+<p>Parks Australia and its partners released skinks onto Pulu Blan in 2019 and Pulu Blan Madar in 2020. These are two islands in the Cocos (Keeling) group, outside the species’ original range. There were setbacks: invasive yellow crazy ants were linked to a decline on the second island. Ant control was followed by signs of recovery and breeding.</p>
+<p>By September 2026, Taronga reported an estimated 4,000–5,000 skinks on each of those islands. A separate release of 545 animals onto Horsburgh, another island in the same group, created a further refuge opportunity. Long-term survival and breeding there still need follow-up.</p>
+        </section>
+        <section aria-labelledby="blue-tailed-skink-why"><h3 id="blue-tailed-skink-why">Why it matters</h3>
+        <p>A rescue involving just dozens of animals has helped keep a species alive and build free-living populations in new refuges. That is a meaningful conservation gain. It also shows why recovery takes continuing work: breeding, habitat assessment, threat control and monitoring, rather than a single release or a declaration that the species is saved.</p></section>
+        <details class="evidence-details"><summary>Evidence and limits</summary>
+          <div class="evidence-body">
+        
         <div class="explain"><strong>What does “about 10,000” mean?</strong>The 2026 translocation application estimates approximately 5,000 skinks on each of the two earlier refuge islands. Taronga’s 21 September 2026 update gives a range of 4,000–5,000 per island: roughly 8,000–10,000 across both. The cover uses a rounded programme estimate, not an exact count, an independently audited census or a whole-species total. Captive animals and the 545 released on Horsburgh are not added to it.</div>
         <p>The early trials needed continuing care. Pulu Blan Madar suffered a decline associated with yellow crazy ants; Parks Australia reported ant baiting and signs of recovery in 2021. The 2026 application describes the two earlier populations as self-sustaining. A 2024 Parks Australia letter reported lower estimates—over 4,000 on Pulu Blan and over 1,400 on Pulu Blan Madar. These different dated estimates are not a standardized population time series.</p>
         <div class="explain"><strong>A third refuge is a new step.</strong>Parks Australia and Taronga report 545 skinks released on Horsburgh Island in 2026. Horsburgh is around 50 times the area of either earlier refuge island, offering more potential habitat. Long-term survival and breeding there still need follow-up. Introduced predators continue to prevent a return to Christmas Island; refuge populations do not mean the species has recovered in its original wild habitat.</div>
         <p>The official accounts were published on 8 July and 21 September 2026. DAFF places releases in June; other reporting refers to July or June–July. We use “2026” for the release rather than treating an announcement date as the event date. Current accounts retain the IUCN category “Extinct in the Wild”, which can include free-living populations well outside a species’ past range; Australia’s national listing is Critically Endangered.</p>
+        </div>
+        </details>
+        <section aria-labelledby="blue-tailed-skink-explore"><h3 id="blue-tailed-skink-explore">Explore further</h3>
         <nav class="links" aria-label="Blue-tailed skink sources">
           <a class="button" href="https://parksaustralia.gov.au/news/christmas-island-blue-tailed-skinks-head-horsburgh-island/" target="_blank" rel="noopener noreferrer"><span>Read Parks Australia’s release update</span><span class="arrow" aria-hidden="true">↗</span></a>
           <a class="button" href="https://cdn.taronga.org.au/about/newsroom/media-releases/back-from-the-brink-of-extinction-the-great-christmas-island-blue-tailed-skink-comeback" target="_blank" rel="noopener noreferrer"><span>Explore Taronga’s population estimates</span><span class="arrow" aria-hidden="true">↗</span></a>
@@ -122,9 +151,10 @@
           <a class="button" href="https://parksaustralia.gov.au/news/blue-tailed-skink-translocation-update/" target="_blank" rel="noopener noreferrer"><span>See the early setback and recovery</span><span class="arrow" aria-hidden="true">↗</span></a>
           <a class="button" href="https://www.abc.net.au/news/2026-08-15/endangered-blue-tailed-skinks-released-on-horsburgh-island/107032122" target="_blank" rel="noopener noreferrer"><span>Read ABC’s interviews with the team</span><span class="arrow" aria-hidden="true">↗</span></a>
           <a class="button" href="https://doi.org/10.1111/1755-0998.13780" target="_blank" rel="noopener noreferrer"><span>Explore the genetics paper and real photo</span><span class="arrow" aria-hidden="true">↗</span></a>
-        </nav>
+        </nav></section>
+        <section aria-labelledby="blue-tailed-skink-credits"><h3 id="blue-tailed-skink-credits">Image credits</h3>
         <p class="note">Population and release figures come from the conservation programme and its permit application. ABC contributes reported interviews, not an independent population census. The cover and rescue scene are AI illustrations. The release and refuge-network diagrams are original schematics; island positions, shapes and sizes are symbolic, and animal symbols are not countable units. The two release arrows on slide 4 represent releases from breeding populations to the two named islands. Slide 6 uses a plus sign to introduce another refuge; it does not depict a transport route or imply that all 545 skinks came from the two earlier islands.</p>
-        <p class="note">Real photograph in carousel slide 2: supplied by Lisa Cavanagh, Figure 1b of Dodge et al., first published online in 2023, journal issue 2025, <em>Molecular Ecology Resources</em>, DOI 10.1111/1755-0998.13780. Cropped to the skink panel and resized; no generated enhancement. © 2023 The Authors. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a> for non-commercial reuse. Article and licence links provide the full source and terms. No endorsement by the photographer or institutions is implied.</p>
+<p class="note">Real photograph in carousel slide 2: supplied by Lisa Cavanagh, Figure 1b of Dodge et al., first published online in 2023, journal issue 2025, <em>Molecular Ecology Resources</em>, DOI 10.1111/1755-0998.13780. Cropped to the skink panel and resized; no generated enhancement. © 2023 The Authors. Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0</a> for non-commercial reuse. Article and licence links provide the full source and terms. No endorsement by the photographer or institutions is implied.</p></section>
       </div>
       </details>
     </article>
@@ -135,18 +165,32 @@
         <div>
           <p class="eyebrow">Health · October 2026</p>
           <h2>Born deaf.<br>A new possibility.</h2>
-          <span class="summary-action">Article, video &amp; evidence</span>
+          <span class="summary-action">Read the story + explore sources</span>
         </div>
       </summary>
       <div class="content">
-        <p class="dek">Abdu and Sumaya have a rare inherited form of deafness. A gene therapy was designed to give cells in the inner ear the instructions needed to pass sound signals to the hearing nerve.</p>
-        <div class="explain"><strong>What is Otarmeni?</strong>It is the brand name of a one-time gene therapy for specifically eligible people with OTOF-related hearing loss. It is delivered into the inner ear during surgery and does not treat every form of deafness.</div>
+        <section aria-labelledby="hearing-story-story"><h3 id="hearing-story-story">The story</h3>
+        <p>Abdu and his younger sister Sumaya were born with profound hearing loss linked to changes in OTOF, a gene involved in passing sound signals from the inner ear to the hearing nerve. It helps cells make otoferlin, a protein needed for that communication.</p>
+<p>At Cincinnati Children’s, Abdu received an investigational gene therapy in April 2025, when he was three. The approach delivers a working copy of OTOF into the inner ear so cells can make functional otoferlin. It adds genetic instructions; it does not edit the children’s existing DNA.</p>
+<p>In its October 2026 update, the hospital reported that Abdu had detected sounds within four weeks and later heard within the normal range. Sumaya also received treatment and her hearing improved. The hospital did not report normal-range hearing for her, so the two outcomes should not be treated as identical.</p>
+<p>The treatment, now called Otarmeni, received U.S. accelerated approval on 23 April 2026 for a specifically defined group of people with OTOF-related hearing loss. The siblings’ treatment and the later regulatory milestone belong to the same developing field, but they are different pieces of evidence.</p>
+        </section>
+        <section aria-labelledby="hearing-story-why"><h3 id="hearing-story-why">Why it matters</h3>
+        <p>The progress is a way to address a particular cause of hearing loss by helping the inner ear pass on sound signals. For these siblings, the hospital reports meaningful changes. For the wider field, it is a carefully bounded step toward more options—not a treatment for every form of deafness or a reason to assume everyone will have the same outcome.</p></section>
+        <details class="evidence-details"><summary>Evidence and limits</summary>
+          <div class="evidence-body"><p>The family account is a Cincinnati Children’s press release, not an independent audit of the children’s clinical records. The wider clinical trial was funded by Regeneron. Individual hospital updates and trial-group analyses should not be added together as separate, independent proof.</p>
+<p>The FDA label describes a single-arm study: 24 participants were treated, with 20 in the week-24 efficacy analysis. Sixteen of those 20 reached an average pure-tone hearing threshold of 70 dB HL or better. That is a defined study endpoint, <strong>not a finding that 80% achieved normal hearing</strong>. For bilateral treatment, the better treated ear was used; one missing week-24 assessment was counted as non-response.</p>
+<p>The approved indication requires molecularly confirmed variants in both copies of OTOF, severe-to-profound or profound hearing loss, preserved outer-hair-cell function, and no prior cochlear implant in the treated ear. Treatment involves surgery and carries procedure and treatment risks. Accelerated approval is based on hearing-sensitivity results; confirmatory evidence of clinical benefit is still required.</p></div>
+        </details>
+        <section aria-labelledby="hearing-story-explore"><h3 id="hearing-story-explore">Explore further</h3>
         <nav class="links" aria-label="Hearing story sources">
           <a class="button" href="https://www.prnewswire.com/news-releases/gene-therapy-brings-hearing-to-children-with-inherited-deafness-302901801.html" target="_blank" rel="noopener noreferrer"><span>Read the family update</span><span class="arrow" aria-hidden="true">↗</span></a>
           <a class="button" href="https://youtu.be/VDY-l7tYNWs" target="_blank" rel="noopener noreferrer"><span>Watch the hospital’s video</span><span class="arrow" aria-hidden="true">↗</span></a>
           <a class="button" href="https://www.fda.gov/vaccines-blood-biologics/otarmeni" target="_blank" rel="noopener noreferrer"><span>Explore the FDA evidence</span><span class="arrow" aria-hidden="true">↗</span></a>
-        </nav>
-        <p class="note">The family update comes from Cincinnati Children’s. Regulatory information and trial context come from the US FDA. The image is an AI illustration, not a photograph of the children.</p>
+        <a class="button" href="https://www.fda.gov/media/192098/download?attachment=" target="_blank" rel="noopener noreferrer"><span>Read the FDA prescribing information</span><span class="arrow" aria-hidden="true">↗</span></a>
+        </nav></section>
+        <section aria-labelledby="hearing-story-credits"><h3 id="hearing-story-credits">Image credits</h3>
+        <p class="note">The cover and family scene are conceptual AI illustrations of anonymous figures, not photographs of Abdu and Sumaya. The cell-and-nerve diagrams are original simplified graphics, not anatomical images or evidence of an individual treatment response. The linked hospital video remains with its publisher; no footage or patient photographs are reproduced here.</p></section>
       </div>
       </details>
     </article>
@@ -199,4 +243,3 @@
   </script>
 </body>
 </html>
-
