@@ -226,7 +226,7 @@
       </details>
     </article>
     <article class="story" id="hearing-story" data-theme="Health" data-keywords="hearing deafness Abdu Sumaya OTOF Otarmeni gene therapy">
-      <details open>
+      <details>
       <summary class="story-summary">
         <img class="story-image" src="assets/hearing-story.png" alt="Conceptual paper-cut illustration of two anonymous children facing warm layers of light.">
         <div>
@@ -279,8 +279,7 @@
       theme.append(option);
     }
     document.querySelector('#browse-tools').hidden = false;
-    const newest = stories[0];
-    for (const story of stories) story.querySelector('details').open = story === newest;
+    for (const story of stories) story.querySelector('details').open = false;
     function filterStories() {
       const query = search.value.trim().toLocaleLowerCase();
       let count = 0;
